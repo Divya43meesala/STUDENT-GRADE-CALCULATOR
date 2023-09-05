@@ -1,0 +1,93 @@
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
+public class STUDENTGRADECAL{
+
+public static void main(String args[]){
+
+double TEL , ENG ,HIN ,MAT ,SCI ,SOC ,TOTAL, AVG;
+
+TEL =Integer.parseInt(JOptionPane.showInputDialog("ENTER STUDENT TELUGU MARKS "));
+
+JOptionPane.showMessageDialog(null ,"TELUGU MARKS ARE" +TEL);
+
+ENG =Integer.parseInt(JOptionPane.showInputDialog("ENTER STUDENT ENGLISH MARKS "));
+
+JOptionPane.showMessageDialog(null ,"ENGLISH MARKS ARE" +ENG);
+
+HIN =Integer.parseInt(JOptionPane.showInputDialog("ENTER STUDENT HINDI MARKS "));
+
+JOptionPane.showMessageDialog(null ,"HINDI MARKS ARE" +HIN);
+
+MAT =Integer.parseInt(JOptionPane.showInputDialog("ENTER STUDENT MATHS MARKS "));
+
+JOptionPane.showMessageDialog(null ,"MATHS MARKS ARE" +MAT);
+
+SCI =Integer.parseInt(JOptionPane.showInputDialog("ENTER STUDENT SCIENCE MARKS "));
+
+JOptionPane.showMessageDialog(null ,"SCIENCE MARKS ARE" +SCI);
+
+SOC =Integer.parseInt(JOptionPane.showInputDialog("ENTER STUDENT SOCIAL MARKS "));
+
+JOptionPane.showMessageDialog(null ,"SOCIAL MARKS ARE" +SOC);
+
+/*  CALCULATE TOTAL MARKS */
+
+TOTAL = TEL + ENG + HIN + MAT + SCI + SOC;
+
+/* CALCULATING THE AVERAGE PERCENTAGE */
+
+AVG = TOTAL / 6 ;
+
+System.out.println("DISPLAYING THE RESULTS: ");
+
+System.out.println("YOUR TOTAL MARKS "+TOTAL);
+
+System.out.println("YOUR AVERAGE PERCENTAGE IS "+AVG);
+
+
+if ( AVG >= 90 ){
+
+System.out.println(" YOU SECURED A+ GRADE ");
+
+}
+
+else if(AVG <=90 && AVG >=80){
+
+System.out.println(" YOU SECURED A GRADE");
+
+}
+
+else if(AVG <=80 && AVG >=70){
+
+System.out.println(" YOU SECURED B+ GRADE");
+
+}
+else if(AVG <=70 && AVG >=60){
+
+System.out.println(" YOU SECURED B GRADE");
+
+}
+else if(AVG <=60 && AVG >=50){
+
+System.out.println(" YOU SECURED C+ GRADE");
+
+}
+else if(AVG <=50 && AVG >=40){
+
+System.out.println(" YOU SECURED C GRADE");
+
+}
+else if(AVG <=40 && AVG >=30){
+
+System.out.println(" YOU SECURED D GRADE");
+
+}
+else{
+
+System.out.println("YOU FAILED THE EXAMINATION");
+
+}
+}
+}
